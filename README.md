@@ -28,7 +28,8 @@ CREATE TABLE orders (
     id SERIAL PRIMARY KEY,
     customer_id INT REFERENCES customers(id) ON DELETE CASCADE
 );
-4️⃣ VARCHAR এবং CHAR ডাটাটাইপের মধ্যে পার্থক্য কী?
+
+## 4️⃣ VARCHAR এবং CHAR ডাটাটাইপের মধ্যে পার্থক্য কী?
 বৈশিষ্ট্য	VARCHAR	CHAR
 স্টোরেজ	ডাটা অনুযায়ী পরিবর্তনশীল	নির্দিষ্ট দৈর্ঘ্যের স্টোরেজ
 পারফরম্যান্স	বড় স্ট্রিংয়ের জন্য উপযুক্ত	ছোট ফিক্সড দৈর্ঘ্যের জন্য ভালো
